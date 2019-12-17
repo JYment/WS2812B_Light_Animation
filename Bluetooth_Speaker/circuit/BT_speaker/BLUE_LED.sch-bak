@@ -1,0 +1,111 @@
+EESchema Schematic File Version 4
+LIBS:BT_speaker-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4100 2200 0    50   Input ~ 0
+SIG
+$Comp
+L Device:LED D3
+U 1 1 5DCDA48D
+P 4400 1850
+F 0 "D3" V 4439 1733 50  0000 R CNN
+F 1 "LED" V 4348 1733 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4400 1850 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5DCDAF36
+P 4400 1550
+F 0 "R7" H 4470 1596 50  0000 L CNN
+F 1 "470" H 4470 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 1550 50  0001 C CNN
+F 3 "~" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 1750 2    50   Input ~ 0
+SIG
+Wire Wire Line
+	3000 1750 2900 1750
+$Comp
+L Connector:Conn_01x03_Female J10
+U 1 1 5DCD6BF5
+P 2700 1850
+F 0 "J10" H 2592 1525 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 2592 1616 50  0000 C CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical" H 2700 1850 50  0001 C CNN
+F 3 "~" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDD #PWR0137
+U 1 1 5DCE2C97
+P 2900 1950
+F 0 "#PWR0137" H 2900 1700 50  0001 C CNN
+F 1 "GNDD" V 2904 1840 50  0000 R CNN
+F 2 "" H 2900 1950 50  0001 C CNN
+F 3 "" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR0134
+U 1 1 5DCD8796
+P 2900 1850
+F 0 "#PWR0134" H 2900 1700 50  0001 C CNN
+F 1 "VDD" V 2917 1978 50  0000 L CNN
+F 2 "" H 2900 1850 50  0001 C CNN
+F 3 "" H 2900 1850 50  0001 C CNN
+	1    2900 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR0136
+U 1 1 5DCE2711
+P 4400 2400
+F 0 "#PWR0136" H 4400 2150 50  0001 C CNN
+F 1 "GNDD" H 4404 2245 50  0000 C CNN
+F 2 "" H 4400 2400 50  0001 C CNN
+F 3 "" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0135
+U 1 1 5DCDC203
+P 4400 1400
+F 0 "#PWR0135" H 4400 1250 50  0001 C CNN
+F 1 "VDD" H 4417 1573 50  0000 C CNN
+F 2 "" H 4400 1400 50  0001 C CNN
+F 3 "" H 4400 1400 50  0001 C CNN
+	1    4400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3055 Q1
+U 1 1 5DD3CA84
+P 4300 2200
+F 0 "Q1" H 4490 2246 50  0000 L CNN
+F 1 "2N2222" H 4490 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4500 2125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF" H 4300 2200 50  0001 L CNN
+	1    4300 2200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

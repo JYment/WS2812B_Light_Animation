@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:BT_speaker-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4900 2800 4950 2800
+Wire Wire Line
+	4900 2600 4900 2800
+Wire Wire Line
+	4950 2500 4950 2600
+Wire Wire Line
+	4900 2050 4900 2200
+$Comp
+L power:+5VD #PWR0129
+U 1 1 5DCB9966
+P 4900 2050
+F 0 "#PWR0129" H 4900 1900 50  0001 C CNN
+F 1 "+5VD" H 4915 2223 50  0000 C CNN
+F 2 "" H 4900 2050 50  0001 C CNN
+F 3 "" H 4900 2050 50  0001 C CNN
+	1    4900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2600 4900 2600
+Wire Wire Line
+	4800 2500 4950 2500
+Wire Wire Line
+	4800 2400 4950 2400
+Wire Wire Line
+	4900 2200 4800 2200
+Text GLabel 4000 2600 0    50   Input ~ 0
+R_OUT
+Text GLabel 4000 2500 0    50   Input ~ 0
+G_OUT
+$Comp
+L Transistor_Array:ULN2003 U2
+U 1 1 5DCC3544
+P 4400 2600
+F 0 "U2" H 4400 3267 50  0000 C CNN
+F 1 "ULN2003" H 4400 3176 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 4450 2050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 4500 2400 50  0001 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 2400 0    50   Input ~ 0
+B_OUT
+$Comp
+L Connector:Conn_01x05_Female J9
+U 1 1 5DCE570D
+P 2750 2600
+F 0 "J9" H 2642 2175 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 2642 2266 50  0000 C CNN
+F 2 "Connector_Molex:Molex_SPOX_5267-05A_1x05_P2.50mm_Vertical" H 2750 2600 50  0001 C CNN
+F 3 "~" H 2750 2600 50  0001 C CNN
+	1    2750 2600
+	-1   0    0    1   
+$EndComp
+Text GLabel 3050 2400 2    50   Input ~ 0
+B_OUT
+Text GLabel 3050 2500 2    50   Input ~ 0
+G_OUT
+Text GLabel 3050 2600 2    50   Input ~ 0
+R_OUT
+Wire Wire Line
+	2950 2600 3050 2600
+Wire Wire Line
+	3050 2500 2950 2500
+Wire Wire Line
+	2950 2400 3050 2400
+$Comp
+L power:+5VD #PWR0132
+U 1 1 5DCE77CD
+P 3050 2700
+F 0 "#PWR0132" H 3050 2550 50  0001 C CNN
+F 1 "+5VD" V 3050 2900 50  0000 C CNN
+F 2 "" H 3050 2700 50  0001 C CNN
+F 3 "" H 3050 2700 50  0001 C CNN
+	1    3050 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2700 2950 2700
+$Comp
+L Device:R R?
+U 1 1 5DCEEA03
+P 5500 2600
+AR Path="/5DCEEA03" Ref="R?"  Part="1" 
+AR Path="/5DCAC0C7/5DCEEA03" Ref="R4"  Part="1" 
+AR Path="/5DCD3DF5/5DCEEA03" Ref="R?"  Part="1" 
+F 0 "R4" V 5500 2600 50  0000 C CNN
+F 1 "470" V 5600 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 2600 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5VD #PWR0133
+U 1 1 5DCF2667
+P 5750 2500
+F 0 "#PWR0133" H 5750 2350 50  0001 C CNN
+F 1 "+5VD" H 5765 2673 50  0000 C CNN
+F 2 "" H 5750 2500 50  0001 C CNN
+F 3 "" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2600 5650 2600
+NoConn ~ 4800 2700
+NoConn ~ 4800 2800
+NoConn ~ 4800 2900
+NoConn ~ 4800 3000
+NoConn ~ 4000 3000
+NoConn ~ 4000 2900
+NoConn ~ 4000 2800
+NoConn ~ 4000 2700
+Wire Wire Line
+	3050 2800 2950 2800
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DCCA4DE
+P 4400 3200
+AR Path="/5DBCB0B8/5DCCA4DE" Ref="#PWR?"  Part="1" 
+AR Path="/5DCAC0C7/5DCCA4DE" Ref="#PWR0130"  Part="1" 
+AR Path="/5DCD3DF5/5DCCA4DE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0130" H 4400 2950 50  0001 C CNN
+F 1 "GNDA" H 4500 3000 50  0000 R CNN
+F 2 "" H 4400 3200 50  0001 C CNN
+F 3 "" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DCE70F4
+P 3050 2800
+AR Path="/5DBCB0B8/5DCE70F4" Ref="#PWR?"  Part="1" 
+AR Path="/5DCAC0C7/5DCE70F4" Ref="#PWR0131"  Part="1" 
+AR Path="/5DCD3DF5/5DCE70F4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0131" H 3050 2550 50  0001 C CNN
+F 1 "GNDA" V 3050 2700 50  0000 R CNN
+F 2 "" H 3050 2800 50  0001 C CNN
+F 3 "" H 3050 2800 50  0001 C CNN
+	1    3050 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_RABG D2
+U 1 1 5DD34D52
+P 5150 2600
+F 0 "D2" H 5150 3097 50  0000 C CNN
+F 1 "LED_RABG" H 5150 3006 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5150 2550 50  0001 C CNN
+F 3 "~" H 5150 2550 50  0001 C CNN
+	1    5150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2600 5750 2500
+$EndSCHEMATC
